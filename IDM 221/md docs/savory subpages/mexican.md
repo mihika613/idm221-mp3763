@@ -3,7 +3,7 @@
 ## El Vez
 
 - Location: Philly
-- Rating: 4/5
+- Rating: 5/5
 - Favorite Dishes: Tito Santana Guacamole
 - Overall review: El Vez offers a vibrant and creative twist on Mexican cuisine, making it stand out with its inventive dishes. The Tito Santana Guacamole is a personal favorite, with a unique blend of ingredients like mango and pistachio that really elevate the flavor. Their guacamole options are impressive, with unexpected combinations like jicama and basil that keep things exciting. The atmosphere adds to the fun, with a lively bar, festive décor, and even a photo booth, making it a great spot for a night out. It can be tough to snag a reservation, but once you're there, the experience is absolutely worth it.
 
