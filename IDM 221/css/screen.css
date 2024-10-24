@@ -1,0 +1,48 @@
+/* colors */
+
+.header{
+    background-color: #FFDAFE; /* light pink */
+    color: #0D000D;
+}
+
+body {
+    background-color: #F9FFF3; /* light green */
+    color: #0D000D;
+   }
+
+.footer{
+    background-color: #FFDAFE; /* light pink */
+    color: #0D000D;
+}
+
+figure{
+    background-color: #D9F4C2; /* darker green */
+    color: #0D000D;
+}
+
+
+/* font size */
+h1{
+    font-size: 32px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+p{
+    font-size: 14px;
+}
+
+button{
+    background-color: #0D000D; /* darker green */
+    color: #FFFFFF;
+}
