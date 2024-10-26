@@ -1,48 +1,115 @@
+/* font implementation */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
 /* colors */
 
-.header{
-    background-color: #FFDAFE; /* light pink */
-    color: #0D000D;
+html {
+    --background-color: #F9FFF3;    /* mint green */
+    --figure-color: #D9F4C2;        /* matcha green */
+    --header-footer-color: #FFDAFE; /* bubblegum pink */
+    --star-fill-color: #FFCB5C;     /* nacho yellow */
+    --star-stroke-color: #C27400;   /* burnt orange */
+    --text-color: #0D000D;          /* berry black */
+    --button-text-color: #FFFFFF;   /* sugary white */
+    --link-color: #8D318B;          /* grape purple */
 }
 
 body {
-    background-color: #F9FFF3; /* light green */
-    color: #0D000D;
-   }
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header{
+    background-color: var(--header-footer-color); 
+    color: var(--text-color);
+}
 
 .footer{
-    background-color: #FFDAFE; /* light pink */
-    color: #0D000D;
+    background-color: var(--header-footer-color); 
+    color: var(--text-color);
 }
 
 figure{
-    background-color: #D9F4C2; /* darker green */
-    color: #0D000D;
-}
-
-
-/* font size */
-h1{
-    font-size: 32px;
-}
-
-h2{
-    font-size: 24px;
-}
-
-h3{
-    font-size: 20px;
-}
-
-h4{
-    font-size: 16px;
-}
-
-p{
-    font-size: 14px;
+    background-color: var(--figure-color);
+    color: var(--text-color);
 }
 
 button{
-    background-color: #0D000D; /* darker green */
-    color: #FFFFFF;
+    background-color: var(--text-color); 
+    color: var(--button-text-color);
 }
+
+
+
+
+/* font styling */
+
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h3{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+h4{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+button{
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2; 
+}
+
+p, li{
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 2;
+}
+
+
