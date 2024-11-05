@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; 
+}
+
 /* font implementation */
 
 @font-face {
@@ -31,7 +35,7 @@
 
 
 
-/* colors */
+/* colors & variables */
 
 html {
     --background-color: #F9FFF3;    /* mint green */
@@ -42,6 +46,8 @@ html {
     --text-color: #0D000D;          /* berry black */
     --button-text-color: #FFFFFF;   /* sugary white */
     --link-color: #8D318B;          /* grape purple */
+    --rhythm: 1.5rem;
+    --double-rhythm: 3rem;            /* spacing after each section or element */
 }
 
 body {
@@ -49,26 +55,56 @@ body {
     font-size: 16px;
     background-color: var(--background-color);
     color: var(--text-color);
+    margin: 0;
+    padding: 0 5px;
 }
 
-.header{
+.header {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
     background-color: var(--header-footer-color); 
     color: var(--text-color);
+    padding: var(--rhythm); 
 }
 
 .footer{
+    margin-left: -20px;
+    margin-right: -20px;
+    width: calc(100% + 40px);
     background-color: var(--header-footer-color); 
     color: var(--text-color);
+    padding: var(--rhythm) 90px;
+    margin-top: var(--rhythm);
 }
 
 figure{
     background-color: var(--figure-color);
     color: var(--text-color);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: var(--rhythm) 5px;
+    margin-bottom: var(--double-rhythm);
+}
+
+figure.small {
+    width: 250px; 
+    height: auto; 
+    padding: 1rem ; 
+    margin: var(--rhythm) auto; 
+    text-align: center; 
+}
+
+figure.small h2, figure.small p {
+    margin: 0; 
+    line-height: 1.2; 
 }
 
 button{
     background-color: var(--text-color); 
     color: var(--button-text-color);
+    padding: 5px 20px;
+    margin: var(--rhythm);
 }
 
 
@@ -80,24 +116,32 @@ h1{
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.4;
+    margin-block-start: var(—rhythm);
+    margin-block-end: var(—rhythm);
+    padding: 0 var(--rhythm);
+    text-align: center;
 }
 
 h2{
     font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.4;
+    margin-bottom: var(--rhythm);
 }
 
 h3{
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.4;
+    text-align: center;
+    margin-bottom: var(--rhythm);
 }
 
 h4{
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.4;
+    margin-bottom: var(--rhythm);
 }
 
 button{
@@ -110,6 +154,38 @@ p, li{
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 1.8;
+    margin: 0 20px;
+    margin-bottom: var(--double-rhythm);
 }
 
+.center{
+    text-align: center;
+}
 
+figure h1, figure h2, figure h3, figure h4{
+    text-align: center;
+}
+
+figure button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* shape styling */
+
+figure{
+    border-radius: 30px;
+}
+
+.circle{
+    border-radius: 1000px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--rhythm);
+}
+
+.shadow{
+        box-shadow: 0 0 30px 20px var(--figure-color); /* Drop shadow with specified values */
+}
