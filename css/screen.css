@@ -158,6 +158,10 @@ p, li{
     margin-bottom: var(--double-rhythm);
 }
 
+li{
+    margin-bottom: 0px;
+}
+
 .center{
     text-align: center;
 }
@@ -166,7 +170,7 @@ figure h1, figure h2, figure h3, figure h4{
     text-align: center;
 }
 
-figure button {
+button {
     display: block;
     margin: 0 auto;
     border-radius: 5px;
@@ -176,6 +180,17 @@ figure button {
 
 figure{
     border-radius: 30px;
+}
+
+figure img{
+    display: block;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+img{
+    border-radius: 4px;
 }
 
 .circle{
@@ -189,3 +204,4 @@ figure{
 .shadow{
         box-shadow: 0 0 30px 20px var(--figure-color); /* Drop shadow with specified values */
 }
+
