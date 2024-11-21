@@ -35,6 +35,7 @@
 
 
 
+
 /* colors & variables */
 
 html {
@@ -46,6 +47,13 @@ html {
     --text-color: #0D000D;          /* berry black */
     --button-text-color: #FFFFFF;   /* sugary white */
     --link-color: #8D318B;          /* grape purple */
+
+    --menu-icon-color: var(--text-color);
+    --nav-background-color: var(--background-color);
+    --nav-a-hover-bg-color: var(--link-color);
+  
+    --nav-height: 75px;
+
     --rhythm: 1.5rem;
     --double-rhythm: 3rem;            /* spacing after each section or element */
 }
@@ -57,8 +65,10 @@ body {
     color: var(--text-color);
     margin: 0;
     padding: 0 5px;
+    margin-top: calc(var(--nav-height)*1.25);
 }
 
+/*
 .header {
     margin-left: -20px;
     margin-right: -20px;
@@ -66,7 +76,7 @@ body {
     background-color: var(--header-footer-color); 
     color: var(--text-color);
     padding: var(--rhythm); 
-}
+}*/
 
 .footer{
     margin-left: -20px;
@@ -105,7 +115,143 @@ button{
     color: var(--button-text-color);
     padding: 5px 20px;
     margin: var(--rhythm);
+    cursor: pointer;
 }
+
+a {
+    cursor: pointer;
+}
+
+
+
+
+
+/* menu */
+
+/* Header styling */
+header {
+  background: var(--header-footer-color);
+  height: var(--nav-height);
+  width: 100%;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  display: flex; /* Makes header a flex container */
+  justify-content: space-between; /* Space out children (logo and menu toggle) */
+  align-items: center; /* Align items vertically to the center */
+  padding: 0 1rem; /* Add horizontal padding */
+  box-sizing: border-box;
+
+     
+
+  .logo {
+      margin: 0; 
+      font-size: 1.5rem; 
+      font-weight: bold;
+  }
+  
+  .logo a {
+      color: var(--text-color);
+      text-decoration: none; 
+  }
+  
+    label {
+      cursor: pointer;
+      height: 20px;
+      position: absolute;
+      right: 1rem;
+      width: 26px;
+      z-index: 1001;
+  
+      span {
+        background-color: var(--menu-icon-color);
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+        position: absolute;
+        width: 100%;
+  
+        transform-origin: left;
+  
+        &:nth-child(1) {
+          top: 0;
+        }
+  
+        &:nth-child(2) {
+          top: 8px;
+        }
+  
+        &:nth-child(3) {
+          top: 16px;
+        }
+      }
+    }
+  }
+  
+  nav {
+    background: var(--nav-background-color);
+    height: 100vh;
+    margin-block-start: var(--nav-height);
+    width: 300px;
+  
+    position: fixed;
+    right: -300px;
+    top: 0;
+    z-index: 1000;
+  
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        padding: 0;
+  
+        a {
+          color: var(--text-color);
+          display: block;
+          font-size: 1.25rem;
+          padding-block: 1rem;
+          padding-inline: 1rem;
+          text-decoration: none;
+  
+          &:hover {
+            background-color: var(--nav-a-hover-bg-color);
+            color: var(--link-color);
+          }
+        }
+      }
+    }
+  }
+ 
+  nav ul li {
+    border-bottom: 1px solid black;
+  }
+  
+
+
+
+/* Show nav when checkbox is checked */
+.nav-toggle:checked ~ nav {
+    right: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+    transform: rotate(45deg);
+    top: -2px; /* Fix */
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  
+
 
 
 
@@ -170,6 +316,10 @@ figure h1, figure h2, figure h3, figure h4{
     text-align: center;
 }
 
+figure p{
+    margin-bottom: 20px;
+}
+
 button {
     display: block;
     margin: 0 auto;
@@ -179,7 +329,7 @@ button {
 /* shape styling */
 
 figure{
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 figure img{
@@ -205,3 +355,30 @@ img{
         box-shadow: 0 0 30px 20px var(--figure-color); /* Drop shadow with specified values */
 }
 
+.form{
+  margin: 0 20px;
+}
+
+.form h4{
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+.formfield {
+  text-align: left;
+  background-color: var(--figure-color);
+  border-radius: 0px;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.bigformfield{
+  text-align: left;
+  background-color: var(--figure-color);
+  border-radius: 0px;
+  padding-left: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}

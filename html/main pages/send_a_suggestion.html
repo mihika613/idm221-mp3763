@@ -13,14 +13,24 @@
 <body>
 
     <!--menu-->
-    <section class="header">
-        <h2><b>Mihika's Menu</b></h2>
-        <a href="index.html">Home</a>
-        <a href="savory.html">Savory</a>
-        <a href="sweet.html">Sweet</a>
-        <a href="sips.html">Sips</a>
-        <a href="send_a_suggestion.html">Send a Suggestion</a>
-    </section>
+    <header>
+        <h2 class="logo"><a href="../main pages/index.html">Mihika's Menu</a></h2>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li><a href="../main pages/index.html">Home 👋</a></li>
+                <li><a href="../main pages/savory.html">Savory 🌶️</a></li>
+                <li><a href="../main pages/sweet.html">Sweet 🍬</a></li>
+                <li><a href="../main pages/sips.html">Sips 🍹</a></li>
+                <li><a href="../main pages/send_a_suggestion.html">Send a Suggestion 💌</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <!--intro-->
     <section>
@@ -38,15 +48,27 @@
      <!--contact form-->
      <section>
 
-        <h2>Contact Form</h2>
+        <div class = "form">
 
-        <h4>Name:</h4>
-        <h4>Email:</h4>
-        <h4>Phone Number:</h4>
-        <h4>Restaurant Name:</h4>
-        <h4>Location:</h4>
-        <h4>Favorite Dishes:</h4>
-        <h4>Your Rating/Review:</h4>
+        <h2>Contact Form</h2>
+        
+        <h4>First Name - Required</h4>
+        <div class="formfield"><h4>First Name</h4></div>
+        <h4>Last Name - Required</h4>
+        <div class="formfield"><h4>Last Name</h4></div>
+        <h4>Email - Required</h4>
+        <div class="formfield"><h4>Email</h4></div>
+        <h4>Phone Number</h4>
+        <div class="formfield"><h4>Phone Number</h4></div>
+        <h4>Restaurant Name - Required</h4>
+        <div class="formfield"><h4>Restaurant Name</h4></div>
+        <h4>Location - Required</h4>
+        <div class="formfield"><h4>Location</h4></div>
+        <h4>Favorite Dishes - Required</h4>
+        <div class="formfield"><h4>Favorite Dishes</h4></div>
+        <h4>Your Rating/Review</h4>
+        <div class="bigformfield"><h4>Review</h4></div>
+        </div>
 
     </section>
 
