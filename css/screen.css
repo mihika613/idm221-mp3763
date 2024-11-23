@@ -55,7 +55,7 @@ html {
     --nav-height: 75px;
 
     --rhythm: 1.5rem;
-    --double-rhythm: 3rem;            /* spacing after each section or element */
+    --double-rhythm: 3rem;            
 }
 
 body {
@@ -68,15 +68,6 @@ body {
     margin-top: calc(var(--nav-height)*1.25);
 }
 
-/*
-.header {
-    margin-left: -20px;
-    margin-right: -20px;
-    width: calc(100% + 40px);
-    background-color: var(--header-footer-color); 
-    color: var(--text-color);
-    padding: var(--rhythm); 
-}*/
 
 .footer{
     margin-left: -20px;
@@ -125,10 +116,8 @@ a {
 
 
 
+/* header styling */
 
-/* menu */
-
-/* Header styling */
 header {
   background: var(--header-footer-color);
   height: var(--nav-height);
@@ -138,10 +127,10 @@ header {
   left: 0;
   top: 0;
 
-  display: flex; /* Makes header a flex container */
-  justify-content: space-between; /* Space out children (logo and menu toggle) */
-  align-items: center; /* Align items vertically to the center */
-  padding: 0 1rem; /* Add horizontal padding */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 1rem; 
   box-sizing: border-box;
 
      
@@ -218,7 +207,7 @@ header {
           text-decoration: none;
   
           &:hover {
-            background-color: var(--nav-a-hover-bg-color);
+            background-color: var(--background-color);
             color: var(--link-color);
           }
         }
@@ -233,14 +222,13 @@ header {
 
 
 
-/* Show nav when checkbox is checked */
 .nav-toggle:checked ~ nav {
     right: 0;
   }
   
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
     transform: rotate(45deg);
-    top: -2px; /* Fix */
+    top: -2px; 
   }
   
   .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
@@ -326,6 +314,11 @@ button {
     border-radius: 5px;
 }
 
+
+
+
+
+
 /* shape styling */
 
 figure{
@@ -352,8 +345,13 @@ img{
 }
 
 .shadow{
-        box-shadow: 0 0 30px 20px var(--figure-color); /* Drop shadow with specified values */
+        box-shadow: 0 0 30px 20px var(--figure-color); 
 }
+
+
+
+
+/* form styling */
 
 .form{
   margin: 0 20px;
