@@ -85,14 +85,16 @@ figure{
     margin-left: 20px;
     margin-right: 20px;
     padding: var(--rhythm) 5px;
+    padding-top: 3px;
     margin-bottom: var(--double-rhythm);
 }
 
 figure.small {
     width: 250px; 
     height: auto; 
-    padding: 1rem ; 
-    margin: var(--rhythm) auto; 
+    padding: 1rem; 
+    margin: var(--rhythm) auto;
+    padding-bottom: 0.10rem; 
     text-align: center; 
 }
 
