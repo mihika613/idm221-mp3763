@@ -3,7 +3,6 @@
 }
 
 /* font implementation */
-
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Light.woff2') format('woff2');
@@ -37,7 +36,6 @@
 
 
 /* colors & variables */
-
 html {
     --background-color: #F9FFF3;    /* mint green */
     --figure-color: #D9F4C2;        /* matcha green */
@@ -63,11 +61,10 @@ body {
     font-size: 16px;
     background-color: var(--background-color);
     color: var(--text-color);
-    margin: 0;
+    margin: 0 auto;
     padding: 0 5px;
     margin-top: calc(var(--nav-height)*1.25);
 }
-
 
 .footer{
     margin-left: -20px;
@@ -103,11 +100,13 @@ figure.small h2, figure.small p {
     line-height: 1.2; 
 }
 
-button{
+.button{
+    text-align: center;
+    text-decoration: none;
     background-color: var(--text-color); 
     color: var(--button-text-color);
-    padding: 5px 20px;
-    margin: var(--rhythm);
+    padding: 0.25rem 2rem;
+    width: fit-content;
     cursor: pointer;
 }
 
@@ -115,11 +114,20 @@ a {
     cursor: pointer;
 }
 
+input{
+  border: none;
+  background-color: var(--figure-color);
+}
+
+input:focus {
+  outline: 2px solid var(--header-footer-color); 
+  outline-offset: 2px;  
+}
+
 
 
 
 /* header styling */
-
 header {
   background: var(--header-footer-color);
   height: var(--nav-height);
@@ -247,7 +255,6 @@ header {
 
 
 /* font styling */
-
 h1{
     font-size: 2rem;
     font-weight: 600;
@@ -280,10 +287,13 @@ h4{
     margin-bottom: var(--rhythm);
 }
 
-button{
+.button{
     font-size: 0.875rem;
     font-weight: 500;
     line-height: 2; 
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
 p, li{
@@ -310,19 +320,11 @@ figure p{
     margin-bottom: 20px;
 }
 
-button {
-    display: block;
-    margin: 0 auto;
-    border-radius: 5px;
-}
-
-
 
 
 
 
 /* shape styling */
-
 figure{
     border-radius: 50px;
 }
@@ -353,32 +355,22 @@ img{
 
 
 
-/* form styling */
 
+/* form styling */
 .form{
   margin: 0 20px;
 }
 
-.form h4{
-  margin: 0;
-  padding-top: 30px;
-  padding-bottom: 5px;
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input {
+  width: 100%; 
+  padding: 1rem;
 }
 
 .formfield {
-  text-align: left;
-  background-color: var(--figure-color);
-  border-radius: 0px;
-  padding-left: 20px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-.bigformfield{
-  text-align: left;
-  background-color: var(--figure-color);
-  border-radius: 0px;
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 2rem; 
 }

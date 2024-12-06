@@ -15,7 +15,7 @@
     <!--menu-->
     <header>
         <h2 class="logo"><a href="index.html">Mihika's Menu</a></h2>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
             <span></span>
@@ -50,25 +50,54 @@
 
         <div class = "form">
 
-        <h2>Contact Form</h2>
-        
-        <h4>First Name - Required</h4>
-        <div class="formfield"><h4>First Name</h4></div>
-        <h4>Last Name - Required</h4>
-        <div class="formfield"><h4>Last Name</h4></div>
-        <h4>Email - Required</h4>
-        <div class="formfield"><h4>Email</h4></div>
-        <h4>Phone Number</h4>
-        <div class="formfield"><h4>Phone Number</h4></div>
-        <h4>Restaurant Name - Required</h4>
-        <div class="formfield"><h4>Restaurant Name</h4></div>
-        <h4>Location - Required</h4>
-        <div class="formfield"><h4>Location</h4></div>
-        <h4>Favorite Dishes - Required</h4>
-        <div class="formfield"><h4>Favorite Dishes</h4></div>
-        <h4>Your Rating/Review</h4>
-        <div class="bigformfield"><h4>Review</h4></div>
+            <h2>Contact Form</h2>
+            
+            <div class="formfield">
+                <label for="first-name">First Name - Required</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="last-name">Last Name - Required</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="email">Email - Required</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            
+            <div class="formfield">
+                <label for="restaurant-name">Restaurant Name - Required</label>
+                <input type="text" id="restaurant-name" name="restaurant-name" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="location">Location - Required</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="favorite-dishes">Favorite Dishes - Required</label>
+                <input type="text" id="favorite-dishes" name="favorite-dishes" required>
+            </div>
+            
+            <div class="formfield">
+                <label for="rating-review">Your Rating/Review</label>
+                <img alt="fill in the stars" src="images/0stars.png" width="200">
+                <input type="text" id="rating-review" name="rating-review">
+            </div>
+
         </div>
+
+        <a class="button">
+            send to mihika
+        </a>
 
     </section>
 
